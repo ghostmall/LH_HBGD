@@ -1,0 +1,54 @@
+<view>
+  <view class="head">
+    <view class="anView">
+      <view class="avatarUrlView ">
+          <image src="{{userInfo.avatarUrl}}"/>
+      </view>
+      <text class="nickName">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <view class='divider'></view>
+  <view>
+    <navigator class='xuanxiang '  url='/pages/info/info'>
+        <view class="images">
+        <image src="/image/icon/completeinfo.png"></image>
+      </view>
+      <text>完善个人信息</text>
+    </navigator>
+
+    <navigator class='xuanxiang'  url='/pages/markwork/markwork'>
+        <view class="images">
+        <image src="/image/icon/mark-homework.png"></image>
+      </view>
+      <text>老师在线批改作业</text>
+    </navigator>
+
+    <navigator class='xuanxiang' url='/pages/queryresult/queryresult'>
+        <view class="images">
+        <image src="/image/icon/score-in.png"></image>
+      </view>
+      <text>学生作业成绩查询</text>
+    </navigator>
+
+    <navigator class='xuanxiang' url='/pages/submitted/submitted'>
+        <view class="images">
+        <image src="/image/icon/submitted.png"></image>
+      </view>
+      <text>已经批阅的作业</text>
+    </navigator>
+
+     <navigator class='xuanxiang' url='/pages/my/class/class'>
+        <view class="images">
+        <image src="/image/icon/registclassinfo.png"></image>
+      </view>
+      <text>学生登记班级信息</text>
+    </navigator>
+
+    <navigator class='xuanxiang' url='/pages/my/lesson/lesson'>
+        <view class="images">
+        <image src="/image/icon/registedclass.png"></image>
+      </view>
+      <text>老师注册班级信息</text>
+    </navigator>
+  </view>
+</view>

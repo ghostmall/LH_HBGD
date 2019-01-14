@@ -1,0 +1,10 @@
+
+<!-- 参数有 学号、班级、成绩、备注-->
+<view class="shop" wx:for="{{queryresult}}" wx:key="id">
+    <view class='shop-info'>
+        <text class='shop-title ell'>学号：{{item.name}}</text>
+        <text class='shop-title ell'>班级：{{item.phone}}</text>
+        <text class='shop-title ell'>成绩：{{item.address}}</text>
+        <text class='shop-title ell'>备注：{{item.businessHours}}</text>
+    </view>
+</view>

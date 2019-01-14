@@ -1,0 +1,9 @@
+<!-- 展示各个专业 -->
+<view class='cell'>
+  <navigator wx:for="{{professional}}" class='cell-item arrow' url='/pages/jobclass/jobclass'>
+        <text>{{item.name}}</text>
+  </navigator>
+</view>
+<!-- 用于间隔 -->
+<view class='divider'></view>
+

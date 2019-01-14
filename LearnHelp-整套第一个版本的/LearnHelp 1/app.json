@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/add/add",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/webview/web",
+    "pages/info/info",
+	  "pages/markwork/markwork",
+    "pages/queryresult/queryresult",
+    "pages/submitted/submitted",
+    "pages/software/software",
+    "pages/results/results",
+    "pages/download/download",
+    "pages/registclassinfor/registclassinfor",
+    "pages/registedclass/registedclass",
+    "pages/jobclass/jobclass",
+    "pages/my/class/class",
+    "pages/my/lesson/lesson"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#007cfd",
+    "navigationBarTitleText": "学习乐帮帮",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#418DEB",
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "首页",
+        "iconPath": "/image/icon/list.png",
+        "selectedIconPath": "/image/icon/lists.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "发布",
+        "iconPath": "/image/icon/add.png",
+        "selectedIconPath": "/image/icon/adds.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "/image/icon/my.png",
+        "selectedIconPath": "/image/icon/mys.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+<navigator class="shop" wx:for="{{software}}" wx:key="id" wx:downloadFil url='/pages/download/download'>
+    <image class='shop-img' src="{{item.images[0]}}"></image>
+    <view class='shop-info'>
+        <text class='shop-title ell'>姓名：{{item.name}}</text>
+        <text class='shop-title ell'>学号：{{item.number}}</text>
+        <text class='shop-title ell'>班级：{{item.classroom}}</text>
+        <text class='shop-title ell'>备注：{{item.classroom}}</text>
+        <text class='shop-title ell'>日期：{{item.businessHours}}</text>
+    </view>
+</navigator>

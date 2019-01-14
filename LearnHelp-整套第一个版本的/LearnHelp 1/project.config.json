@@ -1,0 +1,32 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx5aeefde2327b0541",
+	"projectname": "%E5%AD%A6%E4%B9%A0%E4%B9%90%E5%B8%AE%E5%B8%AE-%E6%B1%87%E6%80%BB%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%89%88%E6%9C%AC",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

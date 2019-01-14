@@ -1,0 +1,25 @@
+<!--pages/detail/detail.wxml-->
+<view id="detail">
+	<view class="type box">
+		<view class="text">提交人:</view>
+		<view class="value">{{detail[catIds].submitor}}</view>
+	</view>
+	<view class="lesson box">
+		<view class="text">所属作业：</view>
+		<view class="value">{{detail[catIds].sort}}</view>
+	</view>
+  <view class="run-image">
+    <view class="doc-info">
+      <block wx:for="{{detail}}" wx:key="index">
+         <image src="{{item.iconUrl}}" mode="widthFix" id="takeSchoolUrl" bindtap="opendocs" data-pos="{{item.fileType}}" /> 
+         <view class="detail">
+		        <view class="text">备注：</view>
+		        <view class="value">{{detail[catIds].remark}}</view>
+	       </view>
+	    </block>
+    </view>
+	</view>
+</view>
+
+
+

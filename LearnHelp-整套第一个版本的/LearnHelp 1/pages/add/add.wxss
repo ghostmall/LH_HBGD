@@ -1,0 +1,209 @@
+/* pages/add/add.wxss */
+page{
+  width: 100%;
+  height:100%;
+}
+view{
+  font-weight: 300;
+}
+#typePickerBox{
+  width: 100%;
+  background:#fafafa;
+  box-shadow: 0px 0px 1px 1px #add;
+}
+#typePicker{
+  width: 90%;
+  margin: auto;
+  font-size: 43rpx;
+  color: #000;
+}
+#typePicker .info{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#typePicker .info .text{
+  width: 50%;
+}
+#typePicker .info .mapper{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #007cfd;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 37rpx;
+  font-weight: lighter;
+}
+#typePicker .info .mapper image{
+  width: 20rpx;
+  height: 20rpx;
+  margin: 10rpx;
+}
+.message {
+  width: 90%;
+  margin: auto;
+  font-size: 35rpx;
+  color:red;
+  font-weight: 300;
+  margin-top: 40rpx;
+}
+.message image{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 100rpx;
+  right: 50rpx;
+}
+#typePicker .info .text{
+  width: 40%;
+}
+#typePicker .info .text{
+  width: 60%;
+}
+#form{
+  width: 90%;
+  margin: auto;
+  margin-top:20rpx;
+}
+#form .line-box{
+  width: 100%;
+  display:flex;
+  align-items:center;
+  border-bottom: 1px solid #ddd;
+  height: 100rpx;
+  line-height: 60rpx;
+}
+#form .line-box .text{
+  width:30%;
+}
+#form .line-box .value{
+  width: 70%；
+  font-size:35rpx;
+  color:#555;
+}
+#form .line-box .placeholder{
+  font-weight: 300;
+  color:#ddd;
+  width: 100%;
+  font-size:35rpx;
+}
+/* 班级 */
+#form .class .classService{
+  width:50%;
+  display:flex;
+  align-items:center; 
+}
+#form .class .classService .text{
+  width: 60%;
+}
+#form .class .class{
+  width: 40%;
+}
+#form .class picker{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  box-shadow: 0px 0px 1px 1px #bbb;
+  border-radius: 2px;
+}
+/* 科目 */
+#form .book .bookService{
+  width:50%;
+  display:flex;
+  align-items:center; 
+}
+#form .book .bookService .text{
+  width: 60%;
+}
+#form .book .class{
+  width: 40%;
+}
+#form .book picker{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 105%;
+  box-shadow: 0px 0px 1px 1px #bbb;
+  border-radius: 2px;
+  font-size: 25rpx;
+  float: left;
+}
+/*备注说明  */
+#form .remark{
+  height: 200rpx;
+  line-height: 300rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  display:block;
+  padding-bottom: 80rpx;
+}
+#form .remark .text{
+  height:80rpx;
+  line-height:80rpx;
+  width:30%；
+}
+#form .remark .value{
+  width: 100%;
+  height:200rpx;
+  line-height: 10%;
+  display:inline-block;
+  font-weight: lighter;
+  position: static;
+}
+
+
+
+.message{
+  width: 90%;
+  margin: auto;
+  font-size: 35rpx;
+  color: #555;
+  font-weight: 300;
+  margin-top: 40rpx;
+}
+
+#typePicker .info .text{
+  width: 40%;
+}
+#typePicker .info .mapper{
+  width: 60%;
+}
+
+
+/*上传多张照片*/
+#form .add-image-box{
+	width: 100%;
+	padding-top: 20rpx;
+	padding-bottom: 20rpx;
+
+}
+#form .add-image-box .image{
+	width: 200rpx;
+	height: 133rpx;
+	margin-top: 20rpx;
+	margin-right: 20rpx;
+	display: inline-block;
+}
+#form .add-image-box .image image{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ddd;
+}
+/* #form .upFile image{
+  width: 100rpx;
+  height: 50rpx;
+  margin: 10rpx;
+} */
+/*限定期限  */
+#form .datetime-box{
+  background: #eee;
+  box-shadow: 0px 0px 1px 1px #ddd;
+  border-radius: 3px;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+

@@ -1,0 +1,101 @@
+#campusChoser{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  font-weight: 300;
+  font-size: 35rpx;
+  color:#444;
+}
+#campusChoser .searchPanel{
+  width: 100%;
+  height: 100rpx;
+  background: #007cfd;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: flex;
+  align-items: center; 
+}
+#campusChoser .searchPanel .search-box{
+  background: #fff;
+  width: 95%;
+  display :flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+#campusChoser .searchPanel image{
+  width: 40rpx;
+  height: 40rpx;
+  background: #fff;
+}
+#campusChoser .searchPanel input{
+  background: #fff;
+  width: 90%;
+  height: 40rpx;
+  margin:auto;
+  padding: 5rpx;
+  font-weight: 400;
+}
+#campusChoser .campus{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  padding:20rpx; 
+  position: relative;
+  left: 0;
+  top: 0;
+  border-bottom: 0.5px solid #fafafa;
+}
+#campusChoser .campus image{
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 20rpx;
+  position: absolute;
+  right: 40rpx;
+  position: absolute;
+}
+#campusChoser .content{
+	display: flex;
+	width: 400%;
+}
+#campusChoser .content .content-box{
+	width: 25%;
+}
+
+
+
+.arrow{
+	border: 1px solid #eaeaea;
+	border-radius: 50%;
+	width: 60rpx;
+	height: 60rpx;
+	position: fixed;
+}
+.arrow view{
+	border-right: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+	width: 40%;
+	height: 40%;
+	position: absolute;
+	top: 15rpx;
+}
+.left{
+	left: 15rpx;
+	bottom: 10rpx;
+}
+.right{
+	right: 15rpx;
+	bottom: 10rpx;
+}
+.left_arrow{
+	rotate: 135deg;
+	left: 20rpx;
+}
+.right_arrow{
+	rotate: -45deg;
+	right: 20rpx;
+}

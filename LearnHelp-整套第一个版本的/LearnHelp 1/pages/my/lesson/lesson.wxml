@@ -1,0 +1,84 @@
+<!--pages/my/lesson/lesson.wxml-->
+<view class="form-box">
+<form class="form" bindsubmit="saveLessonInfo">
+	<view class="line-box">
+		<view class="image-box">
+			<image src="/image/icon/school.png" mode=""/>
+		</view>
+		<view class="title">
+			学校
+		</view>
+		<view class="text-box">
+			<input name="school" bindfocus="choserTip" bindblur="hideTip" data-index="0" bindinput="inputMethod" value="{{inputValues[0]}}"/>
+			<scroll-view  style="display: {{choserDisplay[0]===1?'':'none'}};">
+				<view class="item" wx:for="{{school}}" wx:key="{{index}}" data-type="0" data-item="{{item}}" catchtap="chooseItem">
+					{{item}}
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+	<view class="line-box">
+		<view class="image-box">
+			<image src="/image/icon/department.png" mode=""/>
+		</view>
+		<view class="title">
+			系别
+		</view>
+		<view class="text-box">
+			<input name="department" bindfocus="choserTip" bindblur="hideTip" data-index="1" bindinput="inputMethod" value="{{inputValues[1]}}"/>
+			<scroll-view  style="display: {{choserDisplay[1]===1?'':'none'}};">
+				<view class="item" wx:for="{{department}}" wx:key="{{index}}" data-type="1" data-item="{{item}}" catchtap="chooseItem">
+					{{item}}
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+	<view class="line-box">
+		<view class="image-box">
+			<image src="/image/icon/major.png" mode=""/>
+		</view>
+		<view class="title">
+			专业
+		</view>
+		<view class="text-box">
+			<input name="major" bindfocus="choserTip" bindblur="hideTip" data-index="2" bindinput="inputMethod" value="{{inputValues[2]}}"/>
+			<scroll-view style="display: {{choserDisplay[2]===1?'':'none'}};">
+				<view class="item" wx:for="{{major}}" wx:key="{{index}}" data-type="2" data-item="{{item}}" catchtap="chooseItem">
+					{{item}}
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+	<view class="line-box">
+		<view class="image-box">
+			<image src="/image/icon/clazz.png" mode=""/>
+		</view>
+		<view class="title">
+			班级
+		</view>
+		<view class="text-box">
+			<input name="clazz" bindfocus="choserTip" bindblur="hideTip" data-index="3" bindinput="inputMethod" value="{{inputValues[3]}}"/>
+			<scroll-view style="display: {{choserDisplay[3]===1?'':'none'}};">
+				<view class="item" wx:for="{{clazz}}" wx:key="{{index}}" data-type="3" data-item="{{item}}" catchtap="chooseItem">
+					{{item}}
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+	<view class="line-box">
+		<view class="image-box">
+			<image src="/image/icon/subject.png" mode=""/>
+		</view>
+		<view class="title">
+			学科
+		</view>
+		<view class="text-box">
+			<input name="lesson"/>
+		</view>
+	</view>
+
+	<button class="button" form-type="submit" type="primary">
+		保存授课信息
+	</button>
+</form>
+</view>

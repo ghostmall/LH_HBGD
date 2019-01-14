@@ -1,0 +1,39 @@
+<!--pages/identityValidate/identitValidate.wxml-->
+<text class="notice" decode="true">
+	为保障您的交作业事项能顺利进行，在您\n交作业程序中，需要填写一些身份信息
+</text>
+
+<form bindsubmit="submit">
+
+	<view class="name">
+		<input name="name" placeholder="请输入您的真实姓名" placeholder-style="font-size:35rpx;"/>
+	</view>
+
+	<view class="idcard image-box">
+		<view class="text">
+			请点击下面方框上传您的身份证正面照片
+		</view>
+		<image src="{{idcardPath}}" mode="widthFix" data-variable="idcard" bindtap="choosePhoto"/>
+	</view>
+
+	<view class="school image-box">
+		<view class="text">
+			请点击下面方框上传本人学生证/教师证正面照片
+		</view>
+		<image src="{{schoolPath}}" mode="widthFix" data-variable="school" bindtap="choosePhoto"/>
+	</view>
+    <view class="note">
+		<input name="note" placeholder="学号" placeholder-style="font-size:35rpx;"/>
+	  </view>
+    <view class="note">
+		<input name="note" placeholder="身份证号" placeholder-style="font-size:35rpx;"/>
+	  </view>
+  	<view class="note">
+		<input name="note" placeholder="备注" placeholder-style="font-size:35rpx;"/>
+	  </view>
+
+	<button form-type="submit">
+		提交
+	</button>
+
+</form>

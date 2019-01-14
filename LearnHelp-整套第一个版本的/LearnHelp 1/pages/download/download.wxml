@@ -1,0 +1,6 @@
+    <view wx:for="{{fileTypeList}}" class='shop'>
+    <image class='shop-img' src='{{item.iconurl}}' lazy-load></image>
+        <view catchtap='downloadFile' data-type="{{item.type}}" data-url="{         {item.fileUrl}}"  class='shop-info'>
+           <text class='shop-title ell'>备注：{{item.note}}</text>
+        </view>
+    </view>

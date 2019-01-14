@@ -1,0 +1,14 @@
+.cell{
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.cell-item{
+  border-bottom: 1rpx solid #ddd;
+  padding: 20rpx  30rpx;
+
+}
+
+page{
+  background-color: #f1f1f1;
+}

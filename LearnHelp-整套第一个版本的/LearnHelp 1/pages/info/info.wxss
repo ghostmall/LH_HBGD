@@ -1,0 +1,59 @@
+/* pages/identityValidate/identitValidate.wxss */
+page{
+	width: 90%;
+	margin:auto;
+	margin-top: 30rpx;
+	background: #fafafa;
+	padding-bottom: 40rpx;
+}
+view{
+	font-weight: 300;
+}
+text{
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin: auto;
+}
+.notice{
+	font-size: 30rpx;
+}
+.name{
+	border:1px solid #3c58c6;
+	box-shadow: 0px 0px 1px 1px #fff inset;
+	font-size: 35rpx;
+	margin-top: 40rpx;
+	padding: 10rpx;
+}
+.image-box{
+	width: 100%;
+	margin-top: 40rpx;
+}
+.image-box .text{
+	width: 80%;
+	margin: auto;
+	font-size: 30rpx;
+	text-align: center;
+}
+.image-box image{
+	width: 100%;
+	border: 1px solid #3c58c6;
+	margin-top: 20rpx;
+	box-shadow: 0px 0px 5px 1px #fff inset;
+}
+.note{
+	border:1px solid #3c58c6;
+	box-shadow: 0px 0px 1px 1px #fff inset;
+	font-size: 35rpx;
+	margin-top: 40rpx;
+	padding: 10rpx;
+}
+button{
+	background: #3c58c6;
+	color:#fff;
+	font-size: 35rpx;
+	height: 80rpx;
+	margin-top: 20rpx;
+}

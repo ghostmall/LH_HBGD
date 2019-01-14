@@ -1,0 +1,8 @@
+<!-- 展示各个专业 -->
+<view class='cell'>
+  <navigator wx:for="{{jobclass}}" class='cell-item arrow' url='/pages/software/software?cat={{item.id}}'>
+        <text>{{item.name}}</text>
+  </navigator>
+</view>
+<!-- 用于间隔 -->
+<view class='divider'></view>

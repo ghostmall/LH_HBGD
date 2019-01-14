@@ -1,0 +1,41 @@
+<!--pages/my/class/class.wxml-->
+<scroll-view id="campusChoser" scroll-y="true" style="display: {{campusChoserDisplay}}">
+	<view class="searchPanel">
+		<view class="search-box">
+		<image src="/image/icon/search.png"/>
+		<input name="campus" bindinput="inputMethod"/>
+	</view>
+	</view>
+	<view class="content" animation="{{choserAnimation}}">
+		<view class="school content-box">
+			<view class="campus" wx:for="{{school}}" data-school="{{item}}" bindtap="chooseSchool" wx:key="{{item.id}}" data-index="1">
+				{{item}}<image src="/image/icon/jiantou.png"/>
+			</view>
+		</view>
+		<view class="department content-box">
+			<view class="campus" wx:for="{{department}}" data-department="{{item}}" bindtap="chooseDepartment" wx:key="{{item.id}}" data-index="2">
+				{{item}}<image src="/image/icon/jiantou.png"/>
+			</view>
+		</view>
+		<view class="major content-box">
+			<view class="campus" wx:for="{{major}}" data-major="{{item}}" bindtap="chooseMajor" wx:key="{{item.id}}" data-index="3">
+				{{item}}<image src="/image/icon/jiantou.png"/>
+			</view>
+		</view>
+		<view class="clazz content-box">
+			<view class="campus" wx:for="{{clazz}}" data-clazz="{{item}}" bindtap="finishChose" wx:key="{{item.id}}" data-index="3">
+				{{item}}<image src="/image/icon/jiantou.png"/>
+			</view>
+		</view>
+	</view>
+	<!-- <view class="button">
+		搜索
+	</view> -->
+</scroll-view>
+
+<view class="arrow left" data-index="{{currentIndex==0?0:currentIndex-1}}" catchtap="buttonMove">
+	<view class="left_arrow"></view>
+</view>
+<view class="arrow right" data-index="{{currentIndex==3?3:currentIndex+1}}" catchtap="buttonMove">
+	<view class="right_arrow"></view>
+</view>

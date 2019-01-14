@@ -1,0 +1,114 @@
+<!--pages/list/list.wxml-->
+
+<view class="confirm">
+  <view class="box">
+    <view class="please" decode="ture">  
+       专业: {{major[index1] + '    '}}班级 :{{classmt[index2]?classmt[index2]:'请选择您所在班级'}} 
+    </view>
+    <view class="select" bindtap="moveTheBlock">
+       选择
+    </view>
+  </view>
+</view> 
+
+<view class="confirm1">
+</view> 
+
+<view class="section" animation="{{animationData}}">
+    <picker mode="selector" bindchange="pickerchange" value="{{index}}" range="{{school}}">
+       <view class="picker">
+           <view class="text">  
+             学校
+           </view>
+           <view class="mapper">
+              {{'<'+school[index]+'>'}} 
+          </view>
+      </view>
+    </picker>
+   
+   <picker mode="selector" bindchange="pickerchange1" value="{{index1}}" range="{{major}}">
+       <view class="picker">
+           <view class="text">  
+             专业
+           </view>
+           <view class="mapper">
+              {{'<'+major[index1]+'>'}} 
+          </view>
+       </view>
+    </picker>
+
+    <picker mode="selector" bindchange="pickerchange2" value="{{index2}}" range="{{classmt}}">
+       <view class="picker"> 
+          <view class="text">  
+              班级
+           </view>
+           <view class="mapper">
+              {{'<'+classmt[index2]+'>'}} 
+          </view>
+       </view>
+    </picker> 
+    
+    <picker mode="selector" bindchange="pickerchange3" value="{{index3}}" range="{{subject}}">
+      <view class="picker"> 
+           <view class="text">  
+              科目
+           </view>
+           <view class="mapper">
+               {{'<'+subject[index3]+'>'}}
+           </view>
+      </view>
+    </picker> 
+
+</view>
+
+<view class="tablist">
+    <view wx:for="{{tabList}}" wx:key="index" class='item {{current==index?"select":""}}'   
+           data-pos='{{index}}' bindtap='tabItemClick'
+           url="/pages/list/list?type={{item.id}}">
+        <text>{{item}}</text>
+    </view>
+</view>
+<view class="table" >
+	  <block wx:for="{{listData}}" wx:key="index" wx:if="{{item.type==current}}">
+	    <view class="tr bg-g" wx:if="{{index % 2 == 0}}"  
+      bindtap="checkDetail"  data-pos="{{index}}" data-id="{{item.id}}">
+	      <!-- <view class="td">{{item.a1}}</view> -->
+        <view class="line-box">
+          <view class="halfline-box">
+            <view class="avatar"><image src="item.avatarUrl"/></view>
+    	      <view class="td name">{{item.a2}}</view>
+          </view>
+          <view class="grade">
+            <view class="inner-box" style="color:{{item.grade>60?(item.grade>90?'rgb(3,178,2)':'rgb(1,165,255)'):'rgb(256,84,81)'}};border:1px solid {{item.grade>60?(item.grade>90?'rgb(3,178,2)':'rgb(1,165,255)'):'rgb(256,84,81)'}}">
+              {{item.grade}}100
+            </view>
+          </view>
+        </view>
+        <view class="remark">
+          教师点评：{{item.remark}}这是一段评语，后台连接后删除我
+        </view>
+	      <view class="td1">{{item.a3}}</view>
+      </view>
+	    <view class="tr" wx:else
+      bindtap="checkDetail" data-pos="{{index}}">
+	      <!-- <view class="td">{{item.a1}}</view> -->
+	     <view class="line-box">
+          <view class="halfline-box">
+            <view class="avatar"><image src="item.avatarUrl"/></view>
+    	      <view class="td name">{{item.a2}}</view>
+          </view>
+          <view class="grade">
+            <view class="inner-box" style="color:{{item.grade>60?(item.grade>90?'rgb(3,178,2)':'rgb(1,165,255)'):'rgb(256,84,81)'}};border:1px solid {{item.grade>60?(item.grade>90?'rgb(3,178,2)':'rgb(1,165,255)'):'rgb(256,84,81)'}}">
+              {{item.grade}}100
+            </view>
+          </view>
+        </view>
+        <view class="remark">
+          教师点评：{{item.remark}}这是一段评语，后台连接后删除我
+        </view>
+	      <view class="td1">{{item.a3}}</view>
+	    </view>
+	  </block>
+</view>
+
+

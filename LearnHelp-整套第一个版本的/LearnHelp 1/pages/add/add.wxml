@@ -1,0 +1,56 @@
+
+<view id="form">
+   <form class="form" bindsubmit="submit" bindreset="formReset" style="display:{{pickerIndex==1?'':'none'}};">
+    <input name="type" style="display:none;" value="{{PickerIndex}}" type="number" />
+    <input name="classService" style="display:none;" value="{{classService}}" /> 
+    <!-- -------------------------- -->
+    <view class="remark line-box">
+      <view class="text">文件说明：</view>
+      <textarea class="value" name="remark" placeholder="请备注作业说明" placeholder-class="placeholder"></textarea>
+    </view>
+    <!-- -------------------------- -->
+    <view class="class line-box">
+      <view class="classService">
+        <view class="text">选择班级：</view>
+      </view>
+      <view class="class">
+        <picker id="classPicker" bindchange="classChange" value="{{classIndex}}" range="{{classList}}">
+          {{classList[classIndex]}}
+        </picker>
+      </view>
+    </view>
+
+    <!-- ---------------------- -->
+
+    <view class="upFile">
+      <view>作业文件:</view>
+      <button class="upfile" bindtap="upload">请选择要上传的文件</button>
+    </view>
+
+    <!-- ---------------------- -->
+    <view class="limit-box box">
+      <view class="line-box begin">
+
+        <view class="text">上传时间：</view>
+
+        <view class="date-box datetime-box">
+
+          <view class="">
+            {{begindate}}
+          </view>
+
+        </view>
+      </view>
+    </view>
+
+
+
+    <!-- ------------------- -->
+  
+       <button type="primary" form-type="submit">提交</button>
+       <button formType="reset">重置</button>
+  
+
+  </form>
+</view>
+<!-- ----------------------------------------------------- -->
